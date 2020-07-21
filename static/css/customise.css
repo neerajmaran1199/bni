@@ -1,0 +1,28 @@
+#po {
+
+    width:80%;
+    margin:auto
+
+}  
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+.jumbotron{
+    width:90%
+}
+
+@media screen and (max-width: 400px) {
+
+
+    #row {
+        
+      
+        max-width: 80%;
+        
+        
+         /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}

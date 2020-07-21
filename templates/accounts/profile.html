@@ -1,0 +1,27 @@
+{% extends "news_app/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="profile">
+  <div id="_card" class="card">
+    <img src="{{ user.profile.image.url }}"  style="width:100%" height="300px">
+   
+  
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <fieldset class="form-group">
+          <legend class="border-bottom mb-4">Profile Info</legend>
+          {{ u_form|crispy }}
+          {{ p_form|crispy }}
+      </fieldset>
+      <div class="form-group">
+          <button class="btn btn-outline-info" type="submit" id="_button">Update</button>
+      </div>
+  </form>
+  </div> 
+</div>
+
+
+
+
+{% endblock %}
+
