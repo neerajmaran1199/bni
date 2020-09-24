@@ -11,8 +11,9 @@
             </div>
             <!-- post -->
             {% for post in posts %}
-            <div class="col-md-12" >
-                <div class="post post-row" height="300px">
+          
+            <div class="col-md-12" style="background-color: white;">
+                <div class="post post-row" height="300px" style="border-bottom: 0.1px solid black">
                     <a class="post-img" href=""><img src="{{ post.image.url }}" alt="" width='150px' height='150px'></a>
                     <div class="post-body">
                         <div class="post-meta">
@@ -22,9 +23,12 @@
                         </div>
                         <h3 class="post-title"><a href="{% url 'country-detail' post.pk %}">{{post.title}}</a></h3>
                         <p>{{post.content| truncatechars:100}}</p>
+
                     </div>
                 </div>
+                
             </div>
+            
             {% endfor %}
             <!-- /post -->
 
