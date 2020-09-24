@@ -25,7 +25,7 @@ SECRET_KEY = 'stdq)%1q!s*8jgbp#43=in&fg&tf_)jx87j1)+jbh98eefj0h='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['theindiantimes.herokuapp.com']
 
 
 # Application definition
