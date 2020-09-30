@@ -22,6 +22,7 @@ class Country(models.Model):
     image = models.ImageField(upload_to='pics_country', null=True)
     heading = models.CharField(max_length=100)
     title=models.CharField(max_length=500)
+    slug = models.SlugField(max_length=400)
     content = models.TextField()
     date_time = models.DateTimeField(default=datetime.datetime.now()) 
     category = models.CharField(max_length=20, choices=CATEGORY_CHOICES)
